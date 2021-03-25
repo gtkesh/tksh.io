@@ -21,11 +21,42 @@ export default function Home({
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
         <p>
-          (This is a sample website - you’ll be building a site like this in{" "}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+          Hi, I'm Giorgi. Among the plethora of names friends call me, Gio is
+          the most popular.
         </p>
+        <p>
+          Currently I'm taking some time off to recharge at home in Tbilisi,
+          Georgia and will be joining an amazing team at{" "}
+          <a href="https://pipe.com">Pipe</a> very soon! If you don't know about
+          Pipe, go{" "}
+          <a href="https://alexdanco.com/2021/03/10/pipe-it-platforms-funding-and-the-future/">
+            check it out
+          </a>{" "}
+          and be ready to have your mind blown.
+        </p>
+        <p>
+          I spent the last 4 years at <a href="https://plaid.com">Plaid</a> in
+          San Francisco - the time I cherish dearly.
+        </p>
+        <p>
+          I studied Computer Science at{" "}
+          <a href="https://www.gatech.edu">Georgia Tech</a> and eventually fell
+          in love with ATL.
+        </p>
+        <p>
+          One of the things I'm proud of from my college years is co-founding{" "}
+          <a href="https://medium.com/@gtkesh/do-epic-shit-a2892dade3cb">
+            hackTbilisi
+          </a>{" "}
+          - the first ever college hackathon in my home country with my amazing
+          friends.
+        </p>
+        <p>
+          Some of my late nights and early mornings are captured{" "}
+          <a href="https://soundcloud.com/gtkesh">here.</a>
+        </p>
+        <p>Currently stuck in between 🇬🇪 & 🇺🇸</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>

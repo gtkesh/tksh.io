@@ -5,6 +5,7 @@ import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 
 const name = "Giorgi Tkeshelashvili";
+const profession = "Software Engineer";
 export const siteTitle = "Giorgi Tkeshelashvili";
 
 export default function Layout({
@@ -24,16 +25,7 @@ export default function Layout({
           as="font"
           crossOrigin=""
         />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
-        <meta
-          property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
+        <meta name="description" content="Giorgi Tkeshelashvili" />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
@@ -49,6 +41,7 @@ export default function Layout({
               alt={name}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h3 className={utilStyles.headingLg}>{profession}</h3>
           </>
         ) : (
           <>
