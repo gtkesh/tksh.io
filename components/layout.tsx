@@ -1,38 +1,14 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useTheme } from "next-themes";
-import Toggle from "react-toggle";
 import Link from "next/link";
+import ThemeToggle from "./themeToggle";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
-import "react-toggle/style.css";
-import { useCallback, useEffect, useState } from "react";
 
 const name = "Giorgi Tkeshelashvili";
 const profession = "Software Engineer";
 export const siteTitle = "Giorgi Tkeshelashvili";
-
-function DarkModeToggle({}) {
-  const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
-  const toggle = useCallback(() => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-  }, [theme]);
-
-  useEffect(() => setMounted(true), []);
-  if (!mounted) return null;
-
-  return (
-    <label>
-      <Toggle
-        defaultChecked={false}
-        onChange={toggle}
-        icons={false} // TODO: add custom icons
-      />
-    </label>
-  );
-}
 
 export default function Layout({
   children,
@@ -67,7 +43,7 @@ export default function Layout({
               alt={name}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
-            <DarkModeToggle />
+            <ThemeToggle />
             <h3 className={utilStyles.headingLg}>{profession}</h3>
           </>
         ) : (
