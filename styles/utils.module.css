@@ -28,10 +28,7 @@
 
 .borderCircle {
   border-radius: 50%;
-  border: 2px solid #000 !important;
-}
-[data-theme="dark"] .borderCircle {
-  border: 2px solid #fbeec1 !important;
+  /* border: 2px solid #000 !important; */
 }
 
 .colorInherit {

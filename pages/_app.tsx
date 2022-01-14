@@ -19,7 +19,7 @@ function App({ Component, pageProps }: AppProps) {
 
   return (
     <ThemeProvider defaultTheme="light">
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </ThemeProvider>
   );
 }
